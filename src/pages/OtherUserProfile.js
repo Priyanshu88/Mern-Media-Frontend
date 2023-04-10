@@ -12,7 +12,7 @@ function OtherUserProfile() {
 	);
 
 	useEffect(() => {
-		fetch(`/user/${userId}`, {
+		fetch(`https://mern-media.onrender.com/user/${userId}`, {
 			method: 'get',
 			headers: {
 				Authorization: 'Bearer ' + localStorage.getItem('token'),
@@ -29,7 +29,7 @@ function OtherUserProfile() {
 	}, []); // we want to lad only once when component is mounting/loading that is why an empty array as dependency
 
 	const follow = () => {
-		fetch('/follow', {
+		fetch('https://mern-media.onrender.com/follow', {
 			method: 'put',
 			headers: {
 				'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ function OtherUserProfile() {
 	};
 
 	const unfollow = () => {
-		fetch('/unfollow', {
+		fetch('https://mern-media.onrender.com/unfollow', {
 			method: 'put',
 			headers: {
 				'Content-Type': 'application/json',

@@ -14,7 +14,7 @@ function Login() {
             M.toast({ html: "Enter valid email!", classes: "#c62828 red darken-3" });
             return
         }
-        fetch("/login", {
+        fetch("https://mern-media.onrender.com/login", {
             method: "post",
             headers: {
                 "Content-Type": "application/json"
