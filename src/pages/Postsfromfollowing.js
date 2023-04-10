@@ -9,7 +9,7 @@ function Postsfromfollowing() {
     const { state, dispatch } = useContext(UserContext);
 
     useEffect(() => {
-        fetch("https://mern-media.onrender.com/postsfromfollowing", {
+        fetch("/postsfromfollowing", {
             method: "get",
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("token")
@@ -49,7 +49,7 @@ function Postsfromfollowing() {
             });
     }
     const deletePost = (postId) => {
-        fetch(`https://mern-media.onrender.com/deletepost/${postId}`, {
+        fetch(`/deletepost/${postId}`, {
             method: "delete",
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("token")
@@ -71,7 +71,7 @@ function Postsfromfollowing() {
         event.preventDefault();//avaoid the page refresh
         const commentText = event.target[0].value;
 
-        fetch("https://mern-media.onrender.com/comment", {
+        fetch("/comment", {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
