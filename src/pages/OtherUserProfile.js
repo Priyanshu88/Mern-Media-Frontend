@@ -20,7 +20,7 @@ function OtherUserProfile() {
 		})
 			.then((response) => response.json())
 			.then(function (data) {
-				console.log(data);
+				// console.log(data);
 				setUserProfile(data);
 			})
 			.catch((error) => {
@@ -39,7 +39,7 @@ function OtherUserProfile() {
 		})
 			.then((response) => response.json())
 			.then(function (updatedUser) {
-				console.log(updatedUser);
+				// console.log(updatedUser);
 				dispatch({
 					type: 'UPDATE',
 					payload: {
@@ -77,7 +77,7 @@ function OtherUserProfile() {
 		})
 			.then((response) => response.json())
 			.then(function (updatedUser) {
-				console.log(updatedUser);
+				// console.log(updatedUser);
 				dispatch({
 					type: 'UPDATE',
 					payload: {

@@ -17,7 +17,7 @@ function Profile() {
         })
             .then(response => response.json())
             .then(function (data) {
-                console.log(data);
+                // console.log(data);
                 setMyposts(data.posts);
             }).catch(error => {
                 console.log(error);

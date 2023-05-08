@@ -16,7 +16,7 @@ function Home() {
 		})
 			.then((response) => response.json())
 			.then(function (data) {
-				console.log(data);
+				// console.log(data);
 				setPosts(data.posts);
 			})
 			.catch((error) => {
@@ -34,7 +34,7 @@ function Home() {
 		})
 			.then((response) => response.json())
 			.then(function (updatedPost) {
-				console.log(updatedPost);
+				// console.log(updatedPost);
 				const newPostArr = posts.map((oldPost) => {
 					if (oldPost._id === updatedPost._id) {
 						return updatedPost;
@@ -57,7 +57,7 @@ function Home() {
 		})
 			.then((response) => response.json())
 			.then(function (deletedPost) {
-				console.log('deletedPost = ', deletedPost);
+				// console.log('deletedPost = ', deletedPost);
 				const newPostArr = posts.filter((oldPost) => {
 					return oldPost._id !== deletedPost.result._id; //return the post whose id dont match the deleted id
 				});
@@ -81,7 +81,7 @@ function Home() {
 		})
 			.then((response) => response.json())
 			.then(function (updatedPost) {
-				console.log(updatedPost);
+				// console.log(updatedPost);
 				const newPostArr = posts.map((oldPost) => {
 					if (oldPost._id === updatedPost._id) {
 						return updatedPost;
