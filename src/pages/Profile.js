@@ -9,7 +9,7 @@ function Profile() {
 
     useEffect(() => {
 
-        fetch("https://mern-media.onrender.com/myposts", {
+        fetch("/myposts", {
             method: "get",
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("token")

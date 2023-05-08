@@ -11,7 +11,7 @@ function CreatePost() {
     useEffect(() => {
         if (image) {//only call when the value of image exist
             //call to create post api
-            fetch("https://mern-media.onrender.com/createpost", {
+            fetch("/createpost", {
                 method: "post",
                 headers: {
                     "Content-Type": "application/json",

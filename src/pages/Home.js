@@ -8,7 +8,7 @@ function Home() {
 	const { state, dispatch } = useContext(UserContext);
 
 	useEffect(() => {
-		fetch('https://mern-media.onrender.com/posts', {
+		fetch('/posts', {
 			method: 'get',
 			headers: {
 				Authorization: 'Bearer ' + localStorage.getItem('token'),
@@ -49,7 +49,7 @@ function Home() {
 			});
 	};
 	const deletePost = (postId) => {
-		fetch(`https://mern-media.onrender.com/deletepost/${postId}`, {
+		fetch(`/deletepost/${postId}`, {
 			method: 'delete',
 			headers: {
 				Authorization: 'Bearer ' + localStorage.getItem('token'),
@@ -71,7 +71,7 @@ function Home() {
 		event.preventDefault(); //avaoid the page refresh
 		const commentText = event.target[0].value;
 
-		fetch('https://mern-media.onrender.com/comment', {
+		fetch('/comment', {
 			method: 'put',
 			headers: {
 				'Content-Type': 'application/json',
