@@ -5,7 +5,7 @@
 <h1>MERN Social Media</h1>
 <p>MERN Media has the login, logout and signup features using JWT(JSON Web Token) authentication and BcryptJS has been used for encrpyting and decrypting purpose. The users can view others and their own profile and can make a post with their title and contents also they can like, dislike, comment on posts and follow, unfollow the other people as well as They can view the posts from their follwing. NodeJS has been used as a backend, ExpressJS for API Calls, MongoDB for storing the documents and collections, Cloudinary for storing the images.</p>
 
-<h4> <span> · </span> <a href="https://github.com/Priyanshu88/Mern-Media-Backend/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/Priyanshu88/Mern-Media-Backend/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/Priyanshu88/Mern-Media-Backend/issues"> Request Feature </a> </h4>
+<h4> <span> · </span> <a href="https://github.com/Priyanshu88/Mern-Media-Frontend/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/Priyanshu88/Mern-Media-Frontend/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/Priyanshu88/Mern-Media-Frontend/issues"> Request Feature </a> </h4>
 
 
 </div>
@@ -124,7 +124,7 @@ then run:
 ```bash
 npm install --save
 ```
-install other dependencies from [Backend/package.json](https://github.com/Priyanshu88/Mern-Media-Backend/blob/main/package.json).
+Install other dependencies from [Backend/package.json](https://github.com/Priyanshu88/Mern-Media-Backend/blob/main/package.json).
 
 #### Frontend:
 
@@ -195,7 +195,7 @@ command
 
 ## :wave: Contributing
 
-<a href="https://github.com/Priyanshu88/Mern-Media-Backend//graphs/contributors"> <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" /> </a>
+<a href="https://github.com/Priyanshu88/Mern-Media-Frontend//graphs/contributors"> <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" /> </a>
 
 Contributions are always welcome!
 
