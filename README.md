@@ -20,10 +20,10 @@
   - [Prerequisites](#bangbang-prerequisites)
   - [Installation](#gear-installation)
   - [Run Locally](#running-run-locally)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [Roadmap](#compass-roadmap)
-- [License](#warning-license)
-- [Contact](#handshake-contact)
+  <!--[Deployment](#triangular_flag_on_post-deployment)-->
+ <!--[Roadmap](#compass-roadmap)
+ [License](#warning-license)-->
+ - [Contact](#handshake-contact)
 
 
 ## :star2: About the Project
@@ -55,6 +55,7 @@
 <a href=""><img  src='' alt='image' width='800'/></a>
 </div>
 
+Visit the backend [HERE](https://github.com/Priyanshu88/Mern-Media-Backend/).
 
 ### :space_invader: Tech Stack
 <details> <summary>Client</summary> <ul>
