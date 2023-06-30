@@ -1,70 +1,217 @@
-# Getting Started with Create React App
+<div align='center'>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src=https://github.com/Priyanshu88/Mern-Media-Backend/assets/86107841/b0570640-aff4-42d8-b2b6-0d24d1bbd3e0 alt="logo" width=200 height= />
 
-## Available Scripts
+<h1>MERN Social Media</h1>
+<p>MERN Media has the login, logout and signup features using JWT(JSON Web Token) authentication and BcryptJS has been used for encrpyting and decrypting purpose. The users can view others and their own profile and can make a post with their title and contents also they can like, dislike, comment on posts and follow, unfollow the other people as well as They can view the posts from their follwing. NodeJS has been used as a backend, ExpressJS for API Calls, MongoDB for storing the documents and collections, Cloudinary for storing the images.</p>
 
-In the project directory, you can run:
+<h4> <span> · </span> <a href="https://github.com/Priyanshu88/Mern-Media-Backend/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/Priyanshu88/Mern-Media-Backend/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/Priyanshu88/Mern-Media-Backend/issues"> Request Feature </a> </h4>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# :notebook_with_decorative_cover: Table of Contents
 
-### `npm test`
+- [About the Project](#star2-about-the-project)
+  - [Screenshots](#camera-screenshots)
+  - [Tech Stack](#space_invader-tech-stack)
+  - [Environment Variables](#key-environment-variables)
+- [Getting Started](#toolbox-getting-started)
+  - [Prerequisites](#bangbang-prerequisites)
+  - [Installation](#gear-installation)
+  - [Run Locally](#running-run-locally)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [Roadmap](#compass-roadmap)
+- [License](#warning-license)
+- [Contact](#handshake-contact)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## :star2: About the Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### :camera: Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Application Home page & Demo
+<div align="center"> <a href=""><img src="https://github.com/Priyanshu88/Mern-Media-Backend/assets/86107841/7a8689be-ff9c-4e43-83dc-769a5267d4a6" alt='image' width='800'/></a> </div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br />
 
-### `npm run eject`
+- Other User Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<div align="center">
+<a href=''><img  src='' alt='image' width='800'/></a>
+</div>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- User Profile Page
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<div align="center">
+<a href=""><img  src='' alt='image' width='800'/></a>
+</div>
 
-## Learn More
+- Following Post Page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<div align="center">
+<a href=""><img  src='' alt='image' width='800'/></a>
+</div>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### :space_invader: Tech Stack
+<details> <summary>Client</summary> <ul>
+<li><a href="https://react.dev/">React.js</a></li>
+<li><a href="https://materializecss.com">Materialize CSS</a></li>
+<li><a href="https://reactrouter.com/en/main">React-Router-DOM</a></li>
+</ul> </details>
+<details> <summary>Server</summary> <ul>
+<li><a href="https://nodejs.org">Node.js</a></li>
+<li><a href="http://expressjs.com/">Express.js</a></li>
+</ul> </details>
+<details> <summary>Database</summary> <ul>
+<li><a href="https://www.mongodb.com/atlas">MongoDB</a></li>
+<li><a href="https://cloudinary.com">Cloudinary</a></li>
+</ul> </details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### :dart: Features
+- JWT Authentication
+- Protected Routes
+- Custom User Profile
+- Create and Delete Post Functionality
+- Like, Dislike and Comment Feature
+- Follow and Unfollow users
+- View others and own user profile
+- See the following user posts
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### :art: Color Reference
+| Color | Hex |
+| --------------- | ---------------------------------------------------------------- |
+| Primary Color | ![#040810](https://via.placeholder.com/10/040810?text=+) #040810 |
+| Secondary Color | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
+| Accent Color | ![#00ADB5](https://via.placeholder.com/10/00ADB5?text=+) #00ADB5 |
+| Text Color | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
 
-### Making a Progressive Web App
+### :key: Environment Variables
+To run this project, you will need to add the following environment variables to your .env file
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+`JWT_SECRET`
 
-### Advanced Configuration
+`MONGODB_URI`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+`CLOUDINARY_URL`
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## :toolbox: Getting Started
 
-### `npm run build` fails to minify
+### :bangbang: Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Install Node JS in your computer<a href="https://nodejs.org/en"> Here</a>
+- Create MongoDB account<a href="https://www.mongodb.com/"> Here</a>
+- Get Cloudinary URL<a href="https://cloudinary.com"> Here</a>
+- Learn about JWT<a href="https://jwt.io"> Here</a>
+
+
+### :gear: Installation
+
+#### Backend:
+
+Install the project with npm
+Create a backend folder
+```bash
+npm init
+```
+then run:
+```bash
+npm install --save
+```
+install other dependencies from [Backend/package.json](https://github.com/Priyanshu88/Mern-Media-Backend/blob/main/package.json).
+
+#### Frontend:
+
+Install the project with npm
+Create a frontend folder
+```bash
+npx create-react-app my-project
+```
+
+install other dependencies from [`Frontend/package.json`](https://github.com/Priyanshu88/Mern-Media-Frontend/blob/main/package.json).
+
+### :test_tube: Use Materialize CSS, React-Router-DOM, Cloudinary, MongoDB
+<br/>
+• Head over to the materialize css [`website`](https://materializecss.com), copy the CDN command and paste it in `index.js`.
+<br/>
+• Install React-Router-DOM using `npm install react-router-dom`.
+<br/>
+• Visit [`Cloudinary`](https://cloudinary.com) and from setting copy the apit link and use it.
+<br/>
+• Create account on Atlas [`website`](https://www.mongodb.com/atlas), create a project and from the connect option copy the Nodejs URI and use it.
+
+### :running: Run Locally
+Create a folder
+Clone the backend project
+
+```bash
+https://github.com/Priyanshu88/Mern-Media-Backend/
+```
+
+then clone the frontend project
+
+```bash
+https://github.com/Priyanshu88/Mern-Media-Frontend/
+```
+
+Go to
+```bash
+https://github.com/Priyanshu88/Mern-Media-Backend/
+```
+run
+`npm install`
+and type `npm start`
+then go to
+```bash
+https://github.com/Priyanshu88/Mern-Media-Frontend/
+```
+run
+`npm install`
+and type `npm run start`
+
+
+### Learn More
+
+This project uses [`react-lazy-load-image-components`](https://www.npmjs.com/package/react-lazy-load-image-component) to optimize and load images.
+
+<!--### :triangular_flag_on_post: Deployment
+
+to deploy
+```bash
+command
+```-->
+
+
+<!--## :compass: Roadmap
+
+* [x] roadmap-->
+
+
+## :wave: Contributing
+
+<a href="https://github.com/Priyanshu88/Mern-Media-Backend//graphs/contributors"> <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" /> </a>
+
+Contributions are always welcome!
+
+<!--see `contributing.md` for ways to get started-->
+
+<!--### :scroll: Code of Conduct
+
+Please read the [Code of Conduct](https://github.com/Priyanshu88/Mern-Media-Backend//blob/master/CODE_OF_CONDUCT.md)
+-->
+<!--## :warning: License
+
+Distributed under the no License. See LICENSE.txt for more information.
+-->
+## :handshake: Contact
+
+Priyanshu Pandey - [@twitter_handle](https://twitter.com/Priyans75729802) - 2040020@sliet.ac.in
+
+Project Link: 
+1. [https://github.com/Priyanshu88/Mern-Media-Backend/](https://github.com/Priyanshu88/Mern-Media-Backend/)
+2. [https://github.com/Priyanshu88/Mern-Media-Frontend/](https://github.com/Priyanshu88/Mern-Media-Frontend/)
